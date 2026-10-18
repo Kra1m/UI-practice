@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://b31i0cexkcsf8"]
+
+[ext_resource type="Script" uid="uid://bws51wwujgc85" path="res://scripts/pause.gd" id="1_siadl"]
+[ext_resource type="FontFile" uid="uid://cjjnsgxku5n3w" path="res://assets/7pxMONOkeychain.ttf" id="1_uwngr"]
+[ext_resource type="Texture2D" uid="uid://bguwpo4tejaif" path="res://assets/Equals-Transparent-Clip-Art-PNG.png" id="2_4ulk4"]
+[ext_resource type="FontFile" uid="uid://cycbuc76piteu" path="res://assets/7pxMONOkeychainf.ttf" id="2_8ajfr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_wx3ht"]
+font = ExtResource("1_uwngr")
+font_size = 53
+
+[sub_resource type="LabelSettings" id="LabelSettings_uwngr"]
+font = ExtResource("2_8ajfr")
+font_size = 46
+
+[node name="Node2D" type="Node2D" unique_id=502391916]
+
+[node name="screenUI" type="Control" parent="." unique_id=1219881790]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1150.0
+offset_bottom = 650.0
+
+[node name="Panel" type="Panel" parent="screenUI" unique_id=592959298]
+self_modulate = Color(0.2775505, 0.09389229, 0.4796526, 1)
+custom_maximum_size = Vector2(1200, 220)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 20.0
+offset_top = 69.0
+offset_right = -20.0
+offset_bottom = 289.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="screenUI" unique_id=233606228]
+custom_maximum_size = Vector2(1080, 200)
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 36.0
+offset_top = 75.0
+offset_right = -34.0
+offset_bottom = 275.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(50, 0)
+
+[node name="NpcName" type="Label" parent="screenUI/VBoxContainer" unique_id=1482943735]
+self_modulate = Color(0.5063017, 0.2705306, 0.23721518, 1)
+custom_maximum_size = Vector2(1080, 50)
+layout_mode = 2
+theme_override_constants/line_spacing = 1
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur eos odit ducimus quae. Magnam culpa enim quia labore cillum ipsam. Cupidatat explicabo nisi provident quaerat sed neque quasi numquam ut consequat excepteur fugiat. Dolorem pariatur consequuntur quaerat ducimus obcaecati enim quia. Corrupti veniam mollitia eiusmod est est incididunt. Sint numquam ab ipsam nemo blanditiis quas eos proident quia.
+
+Beatae elit quaerat neque labore animi beatae quis ullamco qui aut ex numquam dicta lorem. Quisquam sunt ea provident nemo vitae sequi. Anim est in ullamco deleniti sunt voluptatum dolores provident. Quasi mollitia velit iusto illo explicabo occaecat eius at ipsam quae praesentium nemo proident ratione. Elit deserunt est mollitia neque cillum quisquam sit labore illo. Ipsa id animi labore labore amet anim qui.
+
+Sit consequat in quas qui dolorem eiusmod dicta odio fugiat qui culpa. Deleniti explicabo explicabo mollitia duis labore illo adipisci animi mollit exercitation fugiat. Officia quis aspernatur nemo quos vero dolores ab porro nisi inventore nostrud duis elit. Nemo cupiditate quaerat ad beatae minim at tempor.
+"
+label_settings = SubResource("LabelSettings_wx3ht")
+vertical_alignment = 1
+autowrap_mode = 3
+text_direction = 1
+
+[node name="NpcTalk" type="Label" parent="screenUI/VBoxContainer" unique_id=1923851145]
+modulate = Color(15.018564, 12.694407, 10.722396, 1)
+custom_maximum_size = Vector2(1080, 300)
+layout_mode = 2
+size_flags_vertical = 0
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur eos odiducimus quae. Magnam culpa enim quia labore cilum ipsam. Cupidatat explicabo nisi provident quaerat sed neque quasi numquam ut consequat ecepteur fugiat. Dolorem ariatur consequunturquaerat ducimus obcecati enim quia. Corrupti veniam mollitia eiusod est est incididunt. Sint numquam ab ipsam nem blanditiis quas eos proident quia.
+Beatae elitquaerat neque labore animi beatae quis ullamco qui aut ex numquam dicta lorem. Quisquam sunt ea provident nemo vitae sequi. Anim est in ullamco deleniti sunt voluptatum dolores provident. Quasi mollitia velit iusto illo explicabo occaecat eius at ipsam quae praesentium nemo proident ratione. Elit deserunt est mollitia neque cillum quisquam sit labore illo. Ipsa id animi labore labore amet anim qui.
+Sit consequat in quas qui dolorem eiusmod dicta od
+"
+label_settings = SubResource("LabelSettings_uwngr")
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="HealthBar" type="Panel" parent="screenUI" unique_id=2021065051]
+custom_maximum_size = Vector2(500, 40)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -250.0
+offset_top = 20.0
+offset_right = 250.0
+offset_bottom = 60.0
+grow_horizontal = 2
+size_flags_vertical = 4
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="screenUI/HealthBar" unique_id=2065611041]
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 40.0
+value = 70.0
+
+[node name="Pause" type="Container" parent="screenUI" unique_id=1436270826]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 50.0
+offset_bottom = 50.0
+script = ExtResource("1_siadl")
+
+[node name="Sprite2D" type="Sprite2D" parent="screenUI/Pause" unique_id=307445632]
+position = Vector2(21.042795, 19.999998)
+rotation = 1.5707964
+scale = Vector2(0.021874992, 0.023666471)
+texture = ExtResource("2_4ulk4")
